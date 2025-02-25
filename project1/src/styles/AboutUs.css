@@ -1,33 +1,99 @@
-.gallery-container{
-    display: flex;
-padding: 96px 24px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
+.gallery-container {
+  display: flex;
+  padding: 96px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
-.gallery-container-child{
-    display: flex;
-    padding: 0px 118px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+.gallery-container-child {
+  display: flex;
+  padding: 0px 118px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
-.gallery-container-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px; 
+.gallery-container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
 }
-.dialog-container-content-main2{
-    display: flex;
-width: 1156px;
-justify-content: center;
-align-items: center;
-gap: 24px;
+.dialog-container-content-main2 {
+  display: flex;
+  width: 1156px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
-.dialog-container-content-main2-content{
-    width: 443px;
-    height: 533px;
-    flex-shrink: 0;
-   
+.dialog-container-content-main2-content {
+  width: 443px;
+  height: 533px;
+  flex-shrink: 0;
+}
+
+.about-ourTeam {
+  width: 100dvw;
+  display: flex;
+  padding: 12px 24px;
+  align-items: flex-start;
+  gap: 10px;
+}
+.about-ourTeam .container {
+  width: 100%;
+  display: flex;
+  padding: 96px 142px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 24px;
+  background: var(--Asklepios-Gray-10, #f2f5f9);
+}
+.about-ourTeam .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+.about-ourTeam .container .content .section:first-child {
+  display: flex;
+  width: 1156px;
+  align-items: center;
+  gap: 16px;
+}
+.about-ourTeam .container .content .section:first-child p {
+  flex: 1 0 0;
+  color: var(--Asklepios-Gray-80, #242e49);
+  font-family: "Plus Jakarta Sans";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 68px;
+  letter-spacing: -1.2px;
+}
+.about-ourTeam .container .content .section:first-child span {
+  display: flex;
+  height: 40px;
+  padding: 8px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  border: 1px solid var(--Asklepios-Gray-80, #242e49);
+}
+
+.about-ourTeam .container .content .section:first-child span p {
+  color: var(--Asklepios-Gray-80, #242e49);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+
+.about-ourTeam .container .content .section:last-child {
+  display: flex;
+  width: 1154px;
+  justify-content: space-between;
+  align-items: flex-start;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AppBar from "../components/AppBar";
+import "../styles/AboutUs.css";
 const AboutUs = () => {
   return (
     <>
@@ -1270,7 +1271,7 @@ const AboutUs = () => {
                     <path d="M2 12L21 12" stroke="white" strokeWidth="2" />
                     <path
                       d="M16 19L20.8787 14.1213C22.0503 12.9497 22.0503 11.0503 20.8787 9.87868L16 5"
-                      stroke="#242E49"
+                      stroke="#fff"
                       strokeWidth="2"
                     />
                   </svg>
@@ -1423,7 +1424,7 @@ const AboutUs = () => {
                   fontSize: 48,
                   fontFamily: "Plus Jakarta Sans",
                   fontWeight: 800,
-                //   lineHeight: 56,
+                  //   lineHeight: 56,
                   wordWrap: "break-word",
                 }}
               >
@@ -1435,7 +1436,7 @@ const AboutUs = () => {
                   fontSize: 48,
                   fontFamily: "Plus Jakarta Sans",
                   fontWeight: 800,
-                //   lineHeight: 56,
+                  //   lineHeight: 56,
                   wordWrap: "break-word",
                 }}
               >
@@ -1447,7 +1448,7 @@ const AboutUs = () => {
                   fontSize: 48,
                   fontFamily: "Plus Jakarta Sans",
                   fontWeight: 800,
-                //   lineHeight: 56,
+                  //   lineHeight: 56,
                   wordWrap: "break-word",
                 }}
               >
@@ -1470,6 +1471,20 @@ const AboutUs = () => {
               real-time insights that adapt to the urgency of every case and the
               realities of Syria’s healthcare challenges.
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="about-ourTeam">
+        <div className="container">
+          <div className="content">
+            <div className="section">
+              <p>Meet Our Team</p>
+              <span>
+                <p>64 Total Member</p>
+              </span>
+            </div>
+            <div className="section"></div>
           </div>
         </div>
       </div>
