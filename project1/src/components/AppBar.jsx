@@ -46,7 +46,7 @@ const AppBar = () => {
               <div className="nav-link">About Us</div>
               <div className="nav-link-more">
                 Resources
-                <div data-svg-wrapper>
+                <div data-svg-wrapper style={{width:"24px" , height:"24px"}}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path
                       fillRule="evenodd"

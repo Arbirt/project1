@@ -43,6 +43,7 @@
   align-items: center;
   gap: 8px;
   width: 80px;
+  text-wrap: nowrap;
 }
 .nav-link-more {
   color: #9ea7b8;
