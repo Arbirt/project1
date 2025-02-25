@@ -205,7 +205,7 @@ const AboutUs = () => {
                     width: 330,
                     color: "#DCE1E8",
                     fontSize: 24,
-                    fontFamily: "Plus Jakarta Sans",
+                    fontFamily: "Plus Jakarta Sans ",
                     fontWeight: 500,
                     // // // // // // // // // // // // // // lineHeighttttttttttt: 38.4,
                     wordWrap: "break-word",
@@ -1373,12 +1373,102 @@ const AboutUs = () => {
                 {" "}
                 <div className="dialog-container-content-main2-content">
                   {" "}
-              
                 </div>{" "}
                 <div className="dialog-container-content-main2-content"></div>{" "}
                 <div className="dialog-container-content-main2-content"></div>{" "}
                 <div className="dialog-container-content-main2-content"></div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: "108px",
+        }}
+      >
+        <div
+          style={{
+            width: "98%",
+            height: 468,
+            paddingTop: 90,
+            paddingBottom: 90,
+            paddingLeft: 118,
+            paddingRight: 547,
+            background: "#242E49",
+            borderRadius: 24,
+            justifyContent: "flex-start",
+            alignItems: "center",
+            display: "inline-flex",
+          }}
+        >
+          <div
+            style={{
+              alignSelf: "stretch",
+              flexDirection: "column",
+              justifyContent: "flex-start",
+              alignItems: "flex-start",
+              gap: 24,
+              display: "inline-flex",
+            }}
+          >
+            <div style={{ width: 727 }}>
+              <span
+                style={{
+                  color: "white",
+                  fontSize: 48,
+                  fontFamily: "Plus Jakarta Sans",
+                  fontWeight: 800,
+                //   lineHeight: 56,
+                  wordWrap: "break-word",
+                }}
+              >
+                To empower medical professionals with{" "}
+              </span>
+              <span
+                style={{
+                  color: "#458CFF",
+                  fontSize: 48,
+                  fontFamily: "Plus Jakarta Sans",
+                  fontWeight: 800,
+                //   lineHeight: 56,
+                  wordWrap: "break-word",
+                }}
+              >
+                AI-powered
+              </span>
+              <span
+                style={{
+                  color: "white",
+                  fontSize: 48,
+                  fontFamily: "Plus Jakarta Sans",
+                  fontWeight: 800,
+                //   lineHeight: 56,
+                  wordWrap: "break-word",
+                }}
+              >
+                {" "}
+                precision in emergencie.
+              </span>
+            </div>
+            <div
+              style={{
+                width: 684,
+                color: "#DCE1E8",
+                fontSize: 20,
+                fontFamily: "Plus Jakarta Sans Light",
+                fontWeight: 500,
+                // lineHeight: 32,
+                wordWrap: "break-word",
+              }}
+            >
+              Transforming chaos into clarity by delivering hyper-specialized,
+              real-time insights that adapt to the urgency of every case and the
+              realities of Syria’s healthcare challenges.
             </div>
           </div>
         </div>
