@@ -2,6 +2,11 @@
   --Asklepios-Gray-80: #242e49;
   --Asklepios-Gray-White: #ffffff;
   --Therapeia-Blue-60: #0f67fe;
+  --Asklepios-Gray-100-A48: #090e1d7a;
+  --Asklepios-Gray-40: #9ea7b8;
+  --Asklepios-Gray-White-A48: #ffffff7a;
+  --Asklepios-Gray-White-A64: #ffffffa3;
+  --Therapeia-Blue-50: #458cff;
 }
 
 .services-img1 {
@@ -74,4 +79,69 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.18px;
+}
+
+.services-secondaryContent {
+  display: flex;
+  width: 96%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.services-scrollDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.services-scrollDown p {
+  color: var(--Asklepios-Gray-80, #242e49);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.14px;
+}
+.services-cards {
+  display: flex;
+  width: 380px;
+  height: 244px;
+  max-height: 244px;
+  padding: 12px 12px 0px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: var(--Asklepios-Gray-100-A48, rgba(9, 14, 29, 0.48));
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.services-cards::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+.services-cards::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+.services-cards::-webkit-scrollbar-thumb {
+  background: var(--Asklepios-Gray-80);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.services-cards .cards {
+  display: flex;
+  width: 356px;
+  height: 106px;
+  padding: 12px 87px 15px 10px;
+  align-items: flex-start;
+  gap: 11px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: var(--Therapeia-Blue-50, #458cff);
+}
+.services-cards .cards:last-child {
+  margin-bottom: 12px;
 }
