@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Header from "../components/AppBar";
+import AppBar from "../components/AppBar";
 const AboutUs = () => {
   return (
     <>
-      <Header />
+      <AppBar />
     </>
   );
 };
