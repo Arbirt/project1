@@ -4,11 +4,74 @@
   --Therapeia-Blue-60: #0f67fe;
 }
 
-.img1 {
+.services-img1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -1;
+}
+
+.services-mainContent {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.services-ourPurpose {
+  display: flex;
+  height: 40px;
+  padding: 8px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  border: 1px solid var(--Asklepios-Gray-80, #242e49);
+  color: var(--Asklepios-Gray-80, #242e49);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.16px;
+  background-color: transparent;
+}
+
+.services-mainPurpose {
+  width: 672px;
+  color: var(--Asklepios-Gray-80, #242e49);
+  text-align: center;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px;
+  letter-spacing: -1.44px;
+}
+
+.services-innerPurpose {
+  color: var(--Therapeia-Blue-60, #0f67fe);
+}
+
+.services-learnMore {
+  display: flex;
+  height: 64px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: var(--Therapeia-Blue-60, #0f67fe);
+}
+
+.services-learnMore p {
+  color: var(--Asklepios-Gray-White, #fff);
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.18px;
 }
