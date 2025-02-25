@@ -1,3 +1,4 @@
+import AppBar from "../components/AppBar";
 import "../styles/servicesPageStyle.css";
 
 const ServicesPage = () => {
@@ -15,8 +16,17 @@ const ServicesPage = () => {
         }}
       >
         <img className="services-img1" src={"../public/images/services1.png"} />
+        <div
+          style={{
+            position: "absolute",
+            top: "10px",
+            width: "100%",
+          }}
+        >
+          <AppBar />
+        </div>
 
-        <div className="services-mainContent">
+        <div className="services-mainContent" style={{ marginTop: "230px" }}>
           <button className="services-ourPurpose">Our Purpose</button>
           <p className="services-mainPurpose">
             We Help You With Making Your Shift Easier
@@ -61,7 +71,135 @@ const ServicesPage = () => {
             </div>
           </div>
           <div className="services-cards">
-            <div className="cards"></div>
+            <div className="cards">
+              <div style={{ width: 46, height: 46, position: "relative" }}>
+                <div
+                  style={{
+                    width: 46,
+                    height: 46,
+                    left: 0,
+                    top: 0,
+                    position: "absolute",
+                    background: "rgba(255, 255, 255, 0.64)",
+                    borderRadius: 9999,
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: 24,
+                    height: 24,
+                    left: 11,
+                    top: 11,
+                    position: "absolute",
+                    borderRadius: 25,
+                  }}
+                >
+                  <div
+                    style={{
+                      width: 12,
+                      height: 12,
+                      left: 6,
+                      top: 6,
+                      position: "absolute",
+                      borderRadius: 3,
+                      border: "2px #242E49 solid",
+                    }}
+                  ></div>
+                  <div
+                    data-svg-wrapper
+                    style={{ left: "12px", top: "2px", position: "absolute" }}
+                  >
+                    <svg width="2" height="4" viewBox="0 0 2 4" fill="none">
+                      <path d="M1 4V0" stroke="#242E49" strokeWidth="2" />
+                    </svg>
+                  </div>
+                  <div
+                    data-svg-wrapper
+                    style={{ left: "12px", top: "22px", position: "absolute" }}
+                  >
+                    <svg width="2" height="4" viewBox="0 0 2 4" fill="none">
+                      <path d="M1 0V4" stroke="#242E49" strokeWidth="2" />
+                    </svg>
+                  </div>
+                  <div
+                    data-svg-wrapper
+                    style={{ left: "12px", top: "12px", position: "absolute" }}
+                  >
+                    <svg width="4" height="2" viewBox="0 0 4 2" fill="none">
+                      <path d="M4 1L0 1" stroke="#242E49" strokeWidth="2" />
+                    </svg>
+                  </div>
+                  <div
+                    data-svg-wrapper
+                    style={{ left: "22px", top: "12px", position: "absolute" }}
+                  >
+                    <svg width="4" height="2" viewBox="0 0 4 2" fill="none">
+                      <path d="M0 1L4 1" stroke="#242E49" strokeWidth="2" />
+                    </svg>
+                  </div>
+                  <div
+                    data-svg-wrapper
+                    style={{ left: "4px", top: "4px", position: "absolute" }}
+                  >
+                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none">
+                      <path
+                        d="M3.75738 3.75738L1 1"
+                        stroke="#242E49"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    data-svg-wrapper
+                    style={{ left: "20px", top: "20px", position: "absolute" }}
+                  >
+                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none">
+                      <path
+                        d="M1.24262 1.24262L4 4"
+                        stroke="#242E49"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    data-svg-wrapper
+                    style={{ left: "4px", top: "20px", position: "absolute" }}
+                  >
+                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none">
+                      <path
+                        d="M3.75738 1.24262L1 4"
+                        stroke="#242E49"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    data-svg-wrapper
+                    style={{ left: "20px", top: "4px", position: "absolute" }}
+                  >
+                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none">
+                      <path
+                        d="M1.24262 3.75738L4 1"
+                        stroke="#242E49"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    data-svg-wrapper
+                    style={{ left: "10px", top: "10px", position: "absolute" }}
+                  >
+                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none">
+                      <path
+                        d="M1 2.5V3.5C1 4.32843 1.67157 5 2.5 5H3.5C4.32843 5 5 4.32843 5 3.5V2.5C5 1.67157 4.32843 1 3.5 1H2.5C1.67157 1 1 1.67157 1 2.5Z"
+                        stroke="#242E49"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div className="cards"></div>
             <div className="cards"></div>
             <div className="cards"></div>
