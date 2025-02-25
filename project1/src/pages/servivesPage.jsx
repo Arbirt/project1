@@ -2,6 +2,26 @@ import AppBar from "../components/AppBar";
 import "../styles/servicesPageStyle.css";
 
 const ServicesPage = () => {
+  const cards = [
+    {
+      p1: "AI-Powered Precision in Emergencies",
+      p2: "Hyper-specialized AI agents, faster than human limits.",
+    },
+    {
+      p1: "Real-Time Decision Support",
+      p2: "From chaos to clarity, instantly.",
+    },
+    // {
+    //   p1: "Error-Reducing Intelligence",
+    //   p2: "High level Ai with little to no errors",
+    // },
+    // {
+    //   p1: "Dynamic Learning for Syria's Needs",
+    //   p2: "From chaos to clarity, instantly.",
+    // },
+  ];
+
+  const tabs = ["AI Analytics", "AI Chatbot", "AI Assistant"];
   return (
     <>
       <div
@@ -70,139 +90,127 @@ const ServicesPage = () => {
               </svg>
             </div>
           </div>
-          <div className="services-cards">
-            <div className="cards">
-              <div style={{ width: 46, height: 46, position: "relative" }}>
-                <div
-                  style={{
-                    width: 46,
-                    height: 46,
-                    left: 0,
-                    top: 0,
-                    position: "absolute",
-                    background: "rgba(255, 255, 255, 0.64)",
-                    borderRadius: 9999,
-                  }}
-                ></div>
-                <div
-                  style={{
-                    width: 24,
-                    height: 24,
-                    left: 11,
-                    top: 11,
-                    position: "absolute",
-                    borderRadius: 25,
-                  }}
+          <div
+            className="services-cards"
+            style={{ borderRadius: cards.length > 2 && "40px 10px 10px 40px" }}
+          >
+            {cards.map((card, index) => (
+              <div key={index} className="cards">
+                <div style={{ width: "46px", height: "46px", flexShrink: 0 }}>
+                  <div style={{ width: 46, height: 46, position: "relative" }}>
+                    {/* Outer Circle */}
+                    <div
+                      style={{
+                        width: 46,
+                        height: 46,
+                        left: 0,
+                        top: 0,
+                        position: "absolute",
+                        background: "rgba(255, 255, 255, 0.64)",
+                        zIndex: 10,
+                        borderRadius: 9999,
+                      }}
+                    />
+                    <img
+                      src="../public/images/virus.svg"
+                      alt="My Icon"
+                      width="32"
+                      height="32"
+                      style={{
+                        zIndex: 1000,
+                        position: "absolute",
+                        color: "black",
+                        top: 7,
+                        left: 7,
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div className="cards-text">
+                  <p>{card.p1}</p>
+                  <p>{card.p2}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="services-secondContent">
+        <div className="container">
+          <div className="content">
+            <div className="col1">
+              <div className="mobile">
+                <div className="metal"></div>
+              </div>
+              <div
+                data-svg-wrapper
+                style={{ position: "absolute", top: 30, right: 30 }}
+              >
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
+                  <path
+                    d="M20 8H14C10.6863 8 8 10.6863 8 14V20"
+                    stroke="white"
+                    strokeWidth="4"
+                  />
+                  <path
+                    d="M20 40H14C10.6863 40 8 37.3137 8 34V28"
+                    stroke="white"
+                    strokeWidth="4"
+                  />
+                  <path
+                    d="M28 8H34C37.3137 8 40 10.6863 40 14V20"
+                    stroke="white"
+                    strokeWidth="4"
+                  />
+                  <path
+                    d="M28 40H34C37.3137 40 40 37.3137 40 34V28"
+                    stroke="white"
+                    strokeWidth="4"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div className="col2">
+              <div className="tabs">
+                {tabs.map((tab, index) => (
                   <div
-                    style={{
-                      width: 12,
-                      height: 12,
-                      left: 6,
-                      top: 6,
-                      position: "absolute",
-                      borderRadius: 3,
-                      border: "2px #242E49 solid",
-                    }}
-                  ></div>
-                  <div
-                    data-svg-wrapper
-                    style={{ left: "12px", top: "2px", position: "absolute" }}
+                    key={index}
+                    className={index == 1 ? "tab active" : "tab"}
                   >
-                    <svg width="2" height="4" viewBox="0 0 2 4" fill="none">
-                      <path d="M1 4V0" stroke="#242E49" strokeWidth="2" />
-                    </svg>
+                    <p>{tab}</p>
                   </div>
-                  <div
-                    data-svg-wrapper
-                    style={{ left: "12px", top: "22px", position: "absolute" }}
-                  >
-                    <svg width="2" height="4" viewBox="0 0 2 4" fill="none">
-                      <path d="M1 0V4" stroke="#242E49" strokeWidth="2" />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    style={{ left: "12px", top: "12px", position: "absolute" }}
-                  >
-                    <svg width="4" height="2" viewBox="0 0 4 2" fill="none">
-                      <path d="M4 1L0 1" stroke="#242E49" strokeWidth="2" />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    style={{ left: "22px", top: "12px", position: "absolute" }}
-                  >
-                    <svg width="4" height="2" viewBox="0 0 4 2" fill="none">
-                      <path d="M0 1L4 1" stroke="#242E49" strokeWidth="2" />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    style={{ left: "4px", top: "4px", position: "absolute" }}
-                  >
-                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none">
+                ))}
+              </div>
+              <div className="frame">
+                <p>Smart AI Meets Personalized Health</p>
+                <p>
+                  Our wide range of ai assistants is designed to help you with
+                  any type of situation
+                </p>
+              </div>
+              <div className="learnmore">
+                <div className="content">
+                  <p>Learn More</p>
+                  <div data-svg-wrapper style={{ position: "relative" }}>
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
                       <path
-                        d="M3.75738 3.75738L1 1"
-                        stroke="#242E49"
-                        strokeWidth="2"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    style={{ left: "20px", top: "20px", position: "absolute" }}
-                  >
-                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none">
-                      <path
-                        d="M1.24262 1.24262L4 4"
-                        stroke="#242E49"
-                        strokeWidth="2"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    style={{ left: "4px", top: "20px", position: "absolute" }}
-                  >
-                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none">
-                      <path
-                        d="M3.75738 1.24262L1 4"
-                        stroke="#242E49"
-                        strokeWidth="2"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    style={{ left: "20px", top: "4px", position: "absolute" }}
-                  >
-                    <svg width="5" height="5" viewBox="0 0 5 5" fill="none">
-                      <path
-                        d="M1.24262 3.75738L4 1"
-                        stroke="#242E49"
-                        strokeWidth="2"
-                      />
-                    </svg>
-                  </div>
-                  <div
-                    data-svg-wrapper
-                    style={{ left: "10px", top: "10px", position: "absolute" }}
-                  >
-                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none">
-                      <path
-                        d="M1 2.5V3.5C1 4.32843 1.67157 5 2.5 5H3.5C4.32843 5 5 4.32843 5 3.5V2.5C5 1.67157 4.32843 1 3.5 1H2.5C1.67157 1 1 1.67157 1 2.5Z"
-                        stroke="#242E49"
-                        strokeWidth="2"
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M16 6.5L16 9.5C16 10.6046 16.8954 11.5 18 11.5L21 11.5V13.5L18 13.5C17.9994 13.5 17.9989 13.5 17.9983 13.5C16.8945 13.5009 16 14.396 16 15.5L16 18.5H14L14 15.5C14 14.7714 14.1948 14.0883 14.5351 13.5L3 13.5V11.5L14.5351 11.5C14.1948 10.9117 14 10.2286 14 9.5L14 6.5H16Z"
+                        fill="white"
                       />
                     </svg>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="cards"></div>
-            <div className="cards"></div>
-            <div className="cards"></div>
           </div>
         </div>
       </div>

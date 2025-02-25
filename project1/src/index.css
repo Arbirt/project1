@@ -15,6 +15,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Plus Jakarta Sans Light";
+  src: url("../public/fonts/PlusJakartaSans-ExtraLight.ttf") format("truetype");
+  /* url("../../public/fonts/Poppins-Bold.ttf") format("truetype") */
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   width: 100vw;

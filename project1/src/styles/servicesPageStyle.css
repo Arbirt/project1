@@ -106,8 +106,7 @@
 .services-cards {
   display: flex;
   width: 380px;
-  height: 244px;
-  max-height: 244px;
+  height: 250px;
   padding: 12px 12px 0px 12px;
   flex-direction: column;
   align-items: flex-start;
@@ -144,4 +143,187 @@
 }
 .services-cards .cards:last-child {
   margin-bottom: 12px;
+}
+.services-ellipse {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  fill: var(--Asklepios-Gray-White-A64, rgba(255, 255, 255, 0.64));
+  border-radius: 50%;
+}
+.services-cards .cards .cards-text {
+  display: flex;
+  width: 202px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  flex-shrink: 0;
+}
+.services-cards .cards .cards-text p:first-child {
+  align-self: stretch;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.18px;
+}
+
+.services-cards .cards .cards-text p:last-child {
+  align-self: stretch;
+  color: var(--Asklepios-Gray-White-A48, rgba(255, 255, 255, 0.48));
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.12px;
+}
+
+.services-secondContent {
+  display: flex;
+  padding: 12px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100dvw;
+  /* margin: auto; */
+  /* margin-top: 123px;
+  transform: scale(1.35); */
+}
+
+.services-secondContent .container {
+  width: 100%;
+  display: flex;
+  padding: 96px 118px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 24px;
+  background: var(--Asklepios-Gray-80, #242e49);
+}
+.services-secondContent .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 142px;
+}
+
+.services-secondContent .container .content .col1 {
+  width: 566px;
+  height: 577px;
+  border-radius: 24px;
+  position: relative;
+  background: var(--Asklepios-Gray-70, #3d4966);
+}
+
+.services-secondContent .container .content .col1 .mobile .metal {
+  width: 457px;
+  height: 538px;
+  flex-shrink: 0;
+  background: url("../../public/images/realPhone-removebg-preview.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 39px;
+  left: 107px;
+}
+.services-secondContent .container .content .col1 .mobile .screen {
+  width: 912px;
+  height: 912px;
+  flex-shrink: 0;
+}
+
+.services-secondContent .container .content .col2 {
+  display: flex;
+  width: 448px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 61px;
+}
+
+.services-secondContent .container .content .col2 .tabs {
+  display: flex;
+  padding: 4px;
+  align-items: flex-start;
+  border-radius: 12px;
+  background: var(--Asklepios-Gray-70, #3d4966);
+}
+
+.services-secondContent .container .content .col2 .tabs .tab {
+  display: flex;
+  height: 48px;
+  padding: 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  color: white;
+}
+.services-secondContent .container .content .col2 .tabs .tab.active {
+  display: flex;
+  height: 48px;
+  padding: 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--Asklepios-Gray-60, #5d6a85);
+}
+
+.services-secondContent .container .content .col2 .frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.services-secondContent .container .content .col2 .frame p:first-child {
+  align-self: stretch;
+  color: var(--Asklepios-Gray-White, #fff);
+  font-family: "Plus Jakarta Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+}
+
+.services-secondContent .container .content .col2 .frame p:last-child {
+  align-self: stretch;
+  color: var(--Asklepios-Gray-20, #dce1e8);
+  font-family: "Plus Jakarta Sans Light";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.services-secondContent .container .content .col2 .learnmore {
+  display: flex;
+  height: 64px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: var(--Therapeia-Blue-60, #0f67fe);
+}
+.services-secondContent .container .content .col2 .learnmore .content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.services-secondContent .container .content .col2 .learnmore .content p {
+  color: var(--Asklepios-Gray-White, #fff);
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.18px;
 }
