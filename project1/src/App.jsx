@@ -1,5 +1,5 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { appRoutes } from "./config/appRoutes";
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path="*" element={<Navigate to="/Services" />} />
         {routes.map((route, index) => (
           <Route key={index} path={route.path} element={route.element} />
         ))}
