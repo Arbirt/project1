@@ -11,15 +11,17 @@ const ServicesPage = () => {
       p1: "Real-Time Decision Support",
       p2: "From chaos to clarity, instantly.",
     },
-    {
-      p1: "Error-Reducing Intelligence",
-      p2: "High level Ai with little to no errors",
-    },
-    {
-      p1: "Dynamic Learning for Syria's Needs",
-      p2: "From chaos to clarity, instantly.",
-    },
+    // {
+    //   p1: "Error-Reducing Intelligence",
+    //   p2: "High level Ai with little to no errors",
+    // },
+    // {
+    //   p1: "Dynamic Learning for Syria's Needs",
+    //   p2: "From chaos to clarity, instantly.",
+    // },
   ];
+
+  const tabs = ["AI Analytics", "AI Chatbot", "AI Assistant"];
   return (
     <>
       <div
@@ -88,7 +90,10 @@ const ServicesPage = () => {
               </svg>
             </div>
           </div>
-          <div className="services-cards">
+          <div
+            className="services-cards"
+            style={{ borderRadius: cards.length > 2 && "40px 10px 10px 40px" }}
+          >
             {cards.map((card, index) => (
               <div key={index} className="cards">
                 <div style={{ width: "46px", height: "46px", flexShrink: 0 }}>
@@ -128,6 +133,84 @@ const ServicesPage = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+      <div className="services-secondContent">
+        <div className="container">
+          <div className="content">
+            <div className="col1">
+              <div className="mobile">
+                <div className="metal"></div>
+              </div>
+              <div
+                data-svg-wrapper
+                style={{ position: "absolute", top: 30, right: 30 }}
+              >
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 8H14C10.6863 8 8 10.6863 8 14V20"
+                    stroke="white"
+                    strokeWidth="4"
+                  />
+                  <path
+                    d="M20 40H14C10.6863 40 8 37.3137 8 34V28"
+                    stroke="white"
+                    strokeWidth="4"
+                  />
+                  <path
+                    d="M28 8H34C37.3137 8 40 10.6863 40 14V20"
+                    stroke="white"
+                    strokeWidth="4"
+                  />
+                  <path
+                    d="M28 40H34C37.3137 40 40 37.3137 40 34V28"
+                    stroke="white"
+                    strokeWidth="4"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div className="col2">
+              <div className="tabs">
+                {tabs.map((tab, index) => (
+                  <div
+                    key={index}
+                    className={index == 1 ? "tab active" : "tab"}
+                  >
+                    <p>{tab}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="frame">
+                <p>Smart AI Meets Personalized Health</p>
+                <p>
+                  Our wide range of ai assistants is designed to help you with
+                  any type of situation
+                </p>
+              </div>
+              <div className="learnmore">
+                <div className="content">
+                  <p>Learn More</p>
+                  <div data-svg-wrapper style={{ position: "relative" }}>
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M16 6.5L16 9.5C16 10.6046 16.8954 11.5 18 11.5L21 11.5V13.5L18 13.5C17.9994 13.5 17.9989 13.5 17.9983 13.5C16.8945 13.5009 16 14.396 16 15.5L16 18.5H14L14 15.5C14 14.7714 14.1948 14.0883 14.5351 13.5L3 13.5V11.5L14.5351 11.5C14.1948 10.9117 14 10.2286 14 9.5L14 6.5H16Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
