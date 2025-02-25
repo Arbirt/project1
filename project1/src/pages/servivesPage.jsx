@@ -214,6 +214,575 @@ const ServicesPage = () => {
           </div>
         </div>
       </div>
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          style={{
+            width: "1440px",
+            height: "1059px",
+            paddingLeft: "143px",
+            paddingRight: "143px",
+            paddingTop: "96px",
+            paddingBottom: "96px",
+            flexDirection: "column",
+            justifyContent: "flex-start",
+            alignItems: "flex-start",
+            gap: "10px",
+            display: "inline-flex",
+          }}
+        >
+          <div
+            style={{
+              flexDirection: "column",
+              justifyContent: "flex-start",
+              alignItems: "center",
+              gap: "64px",
+              display: "flex",
+            }}
+          >
+            <div
+              style={{
+                alignSelf: "stretch",
+                justifyContent: "flex-start",
+                alignItems: "flex-start",
+                gap: "16px",
+                display: "inline-flex",
+              }}
+            >
+              <div
+                style={{
+                  flex: "1 1 0",
+                  flexDirection: "column",
+                  justifyContent: "flex-start",
+                  alignItems: "flex-start",
+                  gap: "16px",
+                  display: "inline-flex",
+                }}
+              >
+                <div
+                  style={{
+                    justifyContent: "flex-start",
+                    alignItems: "center",
+                    gap: "8px",
+                    display: "inline-flex",
+                  }}
+                >
+                  <div style={{ position: "relative" }}>
+                    <svg
+                      width="8"
+                      height="9"
+                      viewBox="0 0 8 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="0.5"
+                        width="8"
+                        height="8"
+                        rx="2"
+                        fill="#0F67FE"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    style={{
+                      color: "#242E49",
+                      fontSize: "18px",
+                      fontFamily: "Plus Jakarta Sans",
+                      fontWeight: "700",
+                      wordWrap: "break-word",
+                    }}
+                  >
+                    Our Commitment
+                  </div>
+                </div>
+                <div
+                  style={{
+                    width: "332px",
+                    color: "#242E49",
+                    fontSize: "48px",
+                    fontFamily: "Plus Jakarta Sans",
+                    fontWeight: "800",
+                    //lineheight: "56px",
+                    wordWrap: "break-word",
+                  }}
+                >
+                  Who We Serve
+                </div>
+              </div>
+              <div
+                style={{
+                  width: "684px",
+                  color: "#5D6A85",
+                  fontSize: "20px",
+                  fontFamily: "Plus Jakarta Sans",
+                  fontWeight: "500",
+                  //lineheight: "32px",
+                  wordWrap: "break-word",
+                }}
+              >
+                We are committed to revolutionizing the healthcare experience
+                through the power of AI and personalized solutions. We serve
+                many areas of industry, from patients to providers alike.
+              </div>
+            </div>
+            <div
+              style={{
+                justifyContent: "flex-start",
+                alignItems: "flex-start",
+                gap: "24px",
+                display: "inline-flex",
+              }}
+            >
+              <div
+                style={{
+                  height: "579px",
+                  padding: "16px",
+                  background: "#F2F5F9",
+                  borderRadius: "24px",
+                  justifyContent: "flex-start",
+                  alignItems: "flex-start",
+                  gap: "10px",
+                  display: "flex",
+                }}
+              >
+                <div
+                  style={{
+                    flex: "1 1 0",
+                    alignSelf: "stretch",
+                    flexDirection: "column",
+                    justifyContent: "flex-start",
+                    alignItems: "flex-start",
+                    gap: "24px",
+                    display: "inline-flex",
+                  }}
+                >
+                  <div>
+                    <svg
+                      width="337"
+                      height="337"
+                      viewBox="0 0 337 337"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="336"
+                        height="336"
+                        rx="15.5"
+                        fill="#EDF5FF"
+                      />
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="336"
+                        height="336"
+                        rx="15.5"
+                        stroke="#458CFF"
+                      />
+                      <path
+                        d="M148.5 144.5C148.5 135.663 155.663 128.5 164.5 128.5H172.5C181.337 128.5 188.5 135.663 188.5 144.5V152.5C188.5 161.337 181.337 168.5 172.5 168.5H164.5C155.663 168.5 148.5 161.337 148.5 152.5V144.5Z"
+                        fill="#A6CBFF"
+                      />
+                      <path
+                        d="M128.5 188.5C128.5 179.663 135.663 172.5 144.5 172.5H192.5C201.337 172.5 208.5 179.663 208.5 188.5V204.5H128.5V188.5Z"
+                        fill="#A6CBFF"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    style={{
+                      alignSelf: "stretch",
+                      height: "186px",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "flex-end",
+                      gap: "24px",
+                      display: "flex",
+                    }}
+                  >
+                    <div
+                      style={{
+                        alignSelf: "stretch",
+                        height: "98px",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "flex-end",
+                        gap: "8px",
+                        display: "flex",
+                      }}
+                    >
+                      <div
+                        style={{
+                          alignSelf: "stretch",
+                          color: "#242E49",
+                          fontSize: "24px",
+                          fontFamily: "Plus Jakarta Sans",
+                          fontWeight: "800",
+                          //lineheight: "32px",
+                          wordWrap: "break-word",
+                        }}
+                      >
+                        Patients
+                      </div>
+                      <div
+                        style={{
+                          alignSelf: "stretch",
+                          color: "#5D6A85",
+                          fontSize: "18px",
+                          fontFamily: "Plus Jakarta Sans",
+                          fontWeight: "500",
+                          //lineheight: "28.80px",
+                          wordWrap: "break-word",
+                        }}
+                      >
+                        At tebb tech health, we serve all patients without
+                        discrimination.
+                      </div>
+                    </div>
+                    <div>
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="64" height="64" rx="12" fill="#242E49" />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M36 26L36 29C36 30.1046 36.8954 31 38 31L41 31V33L38 33C37.9994 33 37.9989 33 37.9983 33C36.8945 33.0009 36 33.896 36 35L36 38H34L34 35C34 34.2714 34.1948 33.5883 34.5351 33L23 33V31L34.5351 31C34.1948 30.4117 34 29.7286 34 29L34 26H36Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={{
+                  height: "579px",
+                  padding: "16px",
+                  background: "#F2F5F9",
+                  borderRadius: "24px",
+                  justifyContent: "flex-start",
+                  alignItems: "flex-start",
+                  gap: "10px",
+                  display: "flex",
+                }}
+              >
+                <div
+                  style={{
+                    flex: "1 1 0",
+                    alignSelf: "stretch",
+                    flexDirection: "column",
+                    justifyContent: "flex-start",
+                    alignItems: "flex-start",
+                    gap: "24px",
+                    display: "inline-flex",
+                  }}
+                >
+                  <div>
+                    <svg
+                      width="337"
+                      height="337"
+                      viewBox="0 0 337 337"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="336"
+                        height="336"
+                        rx="15.5"
+                        fill="#FFF1F3"
+                      />
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="336"
+                        height="336"
+                        rx="15.5"
+                        stroke="#FA4D5E"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M128.5 138.5C128.5 132.977 132.977 128.5 138.5 128.5H144.5V136.5H138.5C137.395 136.5 136.5 137.395 136.5 138.5V166.5C136.5 167.605 137.395 168.5 138.5 168.5H166.5C167.605 168.5 168.5 167.605 168.5 166.5V138.5C168.5 137.395 167.605 136.5 166.5 136.5H160.5V128.5H166.5C172.023 128.5 176.5 132.977 176.5 138.5V166.5C176.5 172.023 172.023 176.5 166.5 176.5H156.5V192.5C156.5 196.918 160.082 200.5 164.5 200.5H180.5C184.918 200.5 188.5 196.918 188.5 192.5V168.3C183.936 167.373 180.5 163.338 180.5 158.5V154.5C180.5 148.977 184.977 144.5 190.5 144.5H194.5C200.023 144.5 204.5 148.977 204.5 154.5V158.5C204.5 163.338 201.064 167.373 196.5 168.3V192.5C196.5 201.337 189.337 208.5 180.5 208.5H164.5C155.663 208.5 148.5 201.337 148.5 192.5V176.5H138.5C132.977 176.5 128.5 172.023 128.5 166.5V138.5ZM188.5 154.5C188.5 153.395 189.395 152.5 190.5 152.5H194.5C195.605 152.5 196.5 153.395 196.5 154.5V158.5C196.5 159.605 195.605 160.5 194.5 160.5H190.5C189.395 160.5 188.5 159.605 188.5 158.5V154.5Z"
+                        fill="#FFB3BD"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    style={{
+                      alignSelf: "stretch",
+                      height: "186px",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "flex-end",
+                      gap: "24px",
+                      display: "flex",
+                    }}
+                  >
+                    <div
+                      style={{
+                        alignSelf: "stretch",
+                        height: "98px",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "flex-end",
+                        gap: "8px",
+                        display: "flex",
+                      }}
+                    >
+                      <div
+                        style={{
+                          alignSelf: "stretch",
+                          color: "#242E49",
+                          fontSize: "24px",
+                          fontFamily: "Plus Jakarta Sans",
+                          fontWeight: "800",
+                          //lineheight: "32px",
+                          wordWrap: "break-word",
+                        }}
+                      >
+                        Professionals
+                      </div>
+                      <div
+                        style={{
+                          alignSelf: "stretch",
+                          color: "#5D6A85",
+                          fontSize: "18px",
+                          fontFamily: "Plus Jakarta Sans",
+                          fontWeight: "500",
+                          //lineheight: "28.80px",
+                          wordWrap: "break-word",
+                        }}
+                      >
+                        We empower healthcare professionals using AI technology.
+                      </div>
+                    </div>
+                    <div>
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="64" height="64" rx="12" fill="#242E49" />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M36 26L36 29C36 30.1046 36.8954 31 38 31L41 31V33L38 33C37.9994 33 37.9989 33 37.9983 33C36.8945 33.0009 36 33.896 36 35L36 38H34L34 35C34 34.2714 34.1948 33.5883 34.5351 33L23 33V31L34.5351 31C34.1948 30.4117 34 29.7286 34 29L34 26H36Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                style={{
+                  height: "579px",
+                  padding: "16px",
+                  background: "#F2F5F9",
+                  borderRadius: "24px",
+                  justifyContent: "flex-start",
+                  alignItems: "flex-start",
+                  gap: "10px",
+                  display: "flex",
+                }}
+              >
+                <div
+                  style={{
+                    flex: "1 1 0",
+                    alignSelf: "stretch",
+                    flexDirection: "column",
+                    justifyContent: "flex-start",
+                    alignItems: "flex-start",
+                    gap: "24px",
+                    display: "inline-flex",
+                  }}
+                >
+                  <div>
+                    <svg
+                      width="337"
+                      height="337"
+                      viewBox="0 0 337 337"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="336"
+                        height="336"
+                        rx="15.5"
+                        fill="#F6F2FF"
+                      />
+                      <rect
+                        x="0.5"
+                        y="0.5"
+                        width="336"
+                        height="336"
+                        rx="15.5"
+                        stroke="#8A3FFC"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M188.5 140.5L148.5 140.5L148.5 132.5L188.5 132.5V140.5Z"
+                        fill="#D3BBFF"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M156.5 144.5C147.663 144.5 140.5 151.663 140.5 160.5V188.5C140.5 197.337 147.663 204.5 156.5 204.5H180.5C189.337 204.5 196.5 197.337 196.5 188.5V160.5C196.5 151.663 189.337 144.5 180.5 144.5H156.5ZM164.5 168.5V160.5H172.5V168.5H180.5V176.5H172.5V184.5H164.5V176.5H156.5V168.5H164.5Z"
+                        fill="#D3BBFF"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    style={{
+                      alignSelf: "stretch",
+                      height: "186px",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "flex-end",
+                      gap: "24px",
+                      display: "flex",
+                    }}
+                  >
+                    <div
+                      style={{
+                        alignSelf: "stretch",
+                        height: "98px",
+                        flexDirection: "column",
+                        justifyContent: "center",
+                        alignItems: "flex-end",
+                        gap: "8px",
+                        display: "flex",
+                      }}
+                    >
+                      <div
+                        style={{
+                          alignSelf: "stretch",
+                          color: "#242E49",
+                          fontSize: "24px",
+                          fontFamily: "Plus Jakarta Sans",
+                          fontWeight: "800",
+                          //lineheight: "32px",
+                          wordWrap: "break-word",
+                        }}
+                      >
+                        Providers
+                      </div>
+                      <div
+                        style={{
+                          alignSelf: "stretch",
+                          color: "#5D6A85",
+                          fontSize: "18px",
+                          fontFamily: "Plus Jakarta Sans",
+                          fontWeight: "500",
+                          //lineheight: "28.80px",
+                          wordWrap: "break-word",
+                        }}
+                      >
+                        We help providers get their health priority straight
+                        with AI Tech.
+                      </div>
+                    </div>
+                    <div>
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="64" height="64" rx="12" fill="#242E49" />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M36 26L36 29C36 30.1046 36.8954 31 38 31L41 31V33L38 33C37.9994 33 37.9989 33 37.9983 33C36.8945 33.0009 36 33.896 36 35L36 38H34L34 35C34 34.2714 34.1948 33.5883 34.5351 33L23 33V31L34.5351 31C34.1948 30.4117 34 29.7286 34 29L34 26H36Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                height: "64px",
+                paddingLeft: "32px",
+                paddingRight: "32px",
+                paddingTop: "16px",
+                paddingBottom: "16px",
+                background: "#0F67FE",
+                borderRadius: "12px",
+                overflow: "hidden",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "8px",
+                display: "inline-flex",
+              }}
+            >
+              <div
+                style={{
+                  justifyContent: "flex-start",
+                  alignItems: "center",
+                  gap: "16px",
+                  display: "flex",
+                }}
+              >
+                <div
+                  style={{
+                    color: "white",
+                    fontSize: "18px",
+                    fontFamily: "Plus Jakarta Sans",
+                    fontWeight: "700",
+                    wordWrap: "break-word",
+                  }}
+                >
+                  Learn More
+                </div>
+                <div style={{ position: "relative" }}>
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.5 12H9.5C11.1569 12 12.5 13.3431 12.5 15V20"
+                      stroke="white"
+                      strokeWidth="2"
+                    />
+                    <path
+                      d="M20.5 12L15.5 12C13.8431 12 12.5 10.6569 12.5 9L12.5 4"
+                      stroke="white"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
