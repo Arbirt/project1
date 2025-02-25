@@ -1,5 +1,11 @@
 import React, { useState } from "react";
+import Header from "../components/AppBar";
 const AboutUs = () => {
-  return <></>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
+
 export default AboutUs;
