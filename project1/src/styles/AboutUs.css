@@ -1,0 +1,33 @@
+.gallery-container{
+    display: flex;
+padding: 96px 24px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+.gallery-container-child{
+    display: flex;
+    padding: 0px 118px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.gallery-container-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px; 
+}
+.dialog-container-content-main2{
+    display: flex;
+width: 1156px;
+justify-content: center;
+align-items: center;
+gap: 24px;
+}
+.dialog-container-content-main2-content{
+    width: 443px;
+    height: 533px;
+    flex-shrink: 0;
+   
+}
