@@ -1,6 +1,7 @@
 import AppBar from "../components/AppBar";
 import "../styles/servicesPageStyle.css";
 import swirl from "../assets/services1.png";
+import virusIcon from "../assets/virus.svg";
 const ServicesPage = () => {
   const cards = [
     {
@@ -112,7 +113,7 @@ const ServicesPage = () => {
                       }}
                     />
                     <img
-                      src="../public/images/virus.svg"
+                      src={virusIcon}
                       alt="My Icon"
                       width="32"
                       height="32"
