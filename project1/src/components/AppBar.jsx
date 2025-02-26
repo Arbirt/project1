@@ -1,7 +1,13 @@
 import React from "react";
 import "../styles/AppBar.css";
+import { useNavigate } from "react-router-dom";
 
 const AppBar = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (route) => {
+    navigate(`/${route}`); // Navigate to the '/about' route
+  };
   return (
     <div
       style={{
@@ -39,11 +45,12 @@ const AppBar = () => {
                 <rect width="8" height="8" rx="2" fill="#0F67FE" />
               </svg>
             </div>
-              <div className="nav-link active" >
+              <div className="nav-link active" onClick={()=>handleClick("Homepage")}>
                 Homepage
               </div></div>
-              <div className="nav-link">Services</div>
-              <div className="nav-link">About Us</div>
+              <div className="nav-link" onClick={()=>handleClick("Homepage")}>Services</div>
+              <div className="nav-link" onClick={()=>handleClick("about")}>About Us</div>
+              
               <div className="nav-link-more">
                 Resources
                 <div data-svg-wrapper style={{width:"24px" , height:"24px"}}>
@@ -57,6 +64,7 @@ const AppBar = () => {
                   </svg>
                 </div>
               </div>
+              <div className="nav-link" onClick={()=>handleClick("FAQ")}>FAQ</div>
               <div className="nav-link">Careers</div>
             </div>
            
@@ -65,7 +73,7 @@ const AppBar = () => {
           {/* Right Section (Button) */}
           <div className="button-container">
             <div className="button">
-              <div className="button-text">Start Now</div>
+              <div className="button-text">Start Now</div>a
               <svg
                 width="31"
                 height="24"
