@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/AppBar.css";
+import tebbtechlogo from "../assets/TebbTechIcon.png";
 import { useNavigate } from "react-router-dom";
 
 const AppBar = () => {
@@ -8,6 +9,12 @@ const AppBar = () => {
   const handleClick = (route) => {
     navigate(`/${route}`); // Navigate to the '/about' route
   };
+  const [path, setPath] = useState(window.location.pathname);
+  // console.log(window.location.pathname);
+  useEffect(() => {
+    setPath(window.location.pathname);
+  }, [window.location?.pathname]);
+
   return (
     <div
       style={{
@@ -24,7 +31,7 @@ const AppBar = () => {
             width={40}
             height={40}
             style={{ marginRight: "52px" }}
-            src="../public/Images/TebbTechIcon.png"
+            src={tebbtechlogo}
             alt="Logo"
             className="logo-image"
           />
@@ -39,21 +46,93 @@ const AppBar = () => {
         >
           <div className="navigation-container">
             <div className="navigation-links">
-                <div style={{display:"flex" , alignItems:'center' , justifyContent:"center" , flexDirection:"column" , marginLeft:"50px" , marginTop:"-18px"}}>
-                     <div data-svg-wrapper>
-              <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
-                <rect width="8" height="8" rx="2" fill="#0F67FE" />
-              </svg>
-            </div>
-              <div className="nav-link active" onClick={()=>handleClick("Homepage")}>
-                Homepage
-              </div></div>
-              <div className="nav-link" onClick={()=>handleClick("Homepage")}>Services</div>
-              <div className="nav-link" onClick={()=>handleClick("about")}>About Us</div>
-              
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  marginLeft: "50px",
+                  marginTop: "-18px",
+                }}
+              >
+                {path == "/Homepage" && (
+                  <div data-svg-wrapper>
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                      <rect width="8" height="8" rx="2" fill="#0F67FE" />
+                    </svg>
+                  </div>
+                )}
+                <div
+                  className={
+                    path == "/Homepage" ? "nav-link active" : "nav-link"
+                  }
+                  onClick={() => handleClick("Homepage")}
+                  style={{ marginTop: path == "/Homepage" ? "0px" : "14px" }}
+                >
+                  Homepage
+                </div>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  marginLeft: "50px",
+                  marginTop: "-18px",
+                }}
+              >
+                {path == "/about" && (
+                  <div data-svg-wrapper>
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                      <rect width="8" height="8" rx="2" fill="#0F67FE" />
+                    </svg>
+                  </div>
+                )}
+                <div
+                  className={path == "/about" ? "nav-link active" : "nav-link"}
+                  onClick={() => handleClick("about")}
+                  style={{ marginTop: path == "/about  " ? "0px" : "14px" }}
+                >
+                  AboutUs
+                </div>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  marginLeft: "50px",
+                  marginTop: "-18px",
+                }}
+              >
+                {path == "/faq" && (
+                  <div data-svg-wrapper>
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                      <rect width="8" height="8" rx="2" fill="#0F67FE" />
+                    </svg>
+                  </div>
+                )}
+                <div
+                  className={path == "/faq" ? "nav-link active" : "nav-link"}
+                  onClick={() => handleClick("faq")}
+                  style={{ marginTop: path == "/faq" ? "0px" : "14px" }}
+                >
+                  FAQ
+                </div>
+              </div>
+              {/* <div className="nav-link" onClick={() => handleClick("Homepage")}>
+                Services
+              </div>
+              <div className="nav-link" onClick={() => handleClick("about")}>
+                About Us
+              </div>
+
               <div className="nav-link-more">
                 Resources
-                <div data-svg-wrapper style={{width:"24px" , height:"24px"}}>
+                <div data-svg-wrapper style={{ width: "24px", height: "24px" }}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path
                       fillRule="evenodd"
@@ -64,10 +143,13 @@ const AppBar = () => {
                   </svg>
                 </div>
               </div>
-              <div className="nav-link" onClick={()=>handleClick("FAQ")}>FAQ</div>
-              <div className="nav-link">Careers</div>
+              <div className="nav-link" onClick={() => handleClick("FAQ")}>
+                FAQ
+              </div>
+              <div className="nav-link" style={{ marginLeft: "-30px" }}>
+                Careers
+              </div> */}
             </div>
-           
           </div>
 
           {/* Right Section (Button) */}
