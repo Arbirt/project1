@@ -1,8 +1,74 @@
 import React, { useState } from "react";
+import briefcase from "../assets/briefcase.svg";
+import arrowDown from "../assets/arrowDown.svg";
+import plusSign from "../assets/plusSign.svg";
+
+import mohamadKhaled from "../assets/tal3mrk.jpg";
+import najemSalem from "../assets/NajemSalem.jpg";
+import zaynMaahrouseh from "../assets/zaynMahrouseh.jpg";
+import karemSa3d from "../assets/kareemSa3d.jpg";
+import noPhoto from "../assets/frfr.jpg";
+import omarAlsakka from "../assets/omarAlSa8a.jpg";
+import molhamFitnah from "../assets/molhamFitna.jpg";
+import ahmadMasri from "../assets/ahmadMasri.jpg";
+import mohamadKudaimy from "../assets/mohamadKudaimy.jpg";
+
 import AppBar from "../components/AppBar";
 import swirl from "../assets/services1.png";
 import "../styles/AboutUs.css";
+import {
+  RiInstagramFill,
+  RiLinkedinBoxFill,
+  RiYoutubeFill,
+} from "@remixicon/react";
 const AboutUs = () => {
+  const teamMemebers = [
+    {
+      name: "Dr. Najem Salem",
+      position:
+        "Medical student | Founder of IR lab Lb | BOD & PR at NDS Hopsital | Founder of TebbTech",
+      img: najemSalem,
+    },
+    {
+      name: "Zayn Al-Abdeen Mahrouseh",
+      position: "Informatics Engineer | AI Specialist",
+      img: zaynMaahrouseh,
+    },
+    {
+      name: "Mouhammd Nour Khaled",
+      position: "Full Stack Developer | UI/UX",
+      img: mohamadKhaled,
+    },
+    {
+      name: "Ahmad Masri",
+      position: "IT Student | Front-End Developer",
+      img: ahmadMasri,
+    },
+    {
+      name: "Karem Saad",
+      position: "Backend Developer | Software Engineer",
+      img: karemSa3d,
+    },
+    {
+      name: "Reham Samer Elawi",
+      position: "Pharmacy Student | Medical Content Writer",
+    },
+    {
+      name: "Omar Alsakka",
+      position: "Medical Student | Red Crescent Volunteer",
+      img: omarAlsakka,
+    },
+    {
+      name: "Molham Fetnah",
+      position: "AI Developer | Programming Trainer",
+      img: molhamFitnah,
+    },
+    {
+      name: "Mohamad Kudaimy",
+      position: "Front-End Developer | Computer Science",
+      img: mohamadKudaimy,
+    },
+  ];
   return (
     <>
       <div
@@ -1482,10 +1548,93 @@ const AboutUs = () => {
             <div className="section">
               <p>Meet Our Team</p>
               <span>
-                <p>64 Total Member</p>
+                <p>{teamMemebers.length} Total Member</p>
               </span>
             </div>
-            <div className="section"></div>
+            <div className="section">
+              <div className="frame">
+                <div className="inputText">
+                  <p>Name</p>
+                  <div>
+                    <div>
+                      <img
+                        src="../public/images/male.svg"
+                        alt="Man"
+                        width={24}
+                        height={24}
+                      />
+                      <input type="text" placeholder="Search Member..." />
+                    </div>
+                  </div>
+                </div>
+                <div className="inputText">
+                  <p>Name</p>
+                  <div>
+                    <div>
+                      <img src={briefcase} alt="Man" width={24} height={24} />
+                      <div style={{ padding: "0" }}>Experience</div>
+                    </div>
+                    <img src={arrowDown} alt="arrow" height={24} width={24} />
+                  </div>
+                </div>
+              </div>
+              <div className="frame">
+                <div className="frame">
+                  {teamMemebers.map((member, index) => (
+                    <div
+                      key={index}
+                      className="teamCard"
+                      style={{ textWrap: "wrap" }}
+                    >
+                      <div className="text">
+                        <p>{member.name}</p>
+                        <p>{member.position}</p>
+                      </div>
+                      <div className="socials">
+                        <a href="">
+                          <RiLinkedinBoxFill
+                            style={{ width: "24px", height: "24px" }}
+                            color="#242E49"
+                          />
+                        </a>
+                        <a href="">
+                          <RiYoutubeFill
+                            style={{ width: "24px", height: "24px" }}
+                            color="#242E49"
+                          />
+                        </a>
+                        <a href="">
+                          <RiInstagramFill
+                            style={{ width: "24px", height: "24px" }}
+                            color="#242E49"
+                          />
+                        </a>
+                      </div>
+                      <div className="imageContainer">
+                        <img
+                          src={member?.img ? member.img : noPhoto}
+                          alt={`member-${index + 1}`}
+                        />
+                        <button>
+                          <img
+                            src={plusSign}
+                            alt="plus"
+                            width={24}
+                            height={24}
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <button>
+                  <div>
+                    <p>Load More</p>
+                    <img src={plusSign} alt="plus" />
+                  </div>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
