@@ -28,7 +28,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/notFound" element={<NotFound />} />
-        <Route path="/signin" element={<SignIn />} />
+        {/* <Route path="/signin" element={<SignIn />} /> */}
       </Routes>
     </>
   );

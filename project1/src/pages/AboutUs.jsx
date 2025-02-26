@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AppBar from "../components/AppBar";
+import swirl from "../assets/services1.png";
 import "../styles/AboutUs.css";
 const AboutUs = () => {
   return (
@@ -15,7 +16,7 @@ const AboutUs = () => {
           flexDirection: "column",
         }}
       >
-        <img className="services-img1" src={"../public/images/services1.png"} />
+        <img className="services-img1" src={swirl} />
         <div
           style={{
             position: "absolute",

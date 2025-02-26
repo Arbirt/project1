@@ -1,6 +1,6 @@
 import AppBar from "../components/AppBar";
 import "../styles/servicesPageStyle.css";
-
+import swirl from "../assets/services1.png";
 const ServicesPage = () => {
   const cards = [
     {
@@ -35,7 +35,7 @@ const ServicesPage = () => {
           flexDirection: "column",
         }}
       >
-        <img className="services-img1" src={"../public/images/services1.png"} />
+        <img className="services-img1" src={swirl} />
         <div
           style={{
             position: "absolute",
