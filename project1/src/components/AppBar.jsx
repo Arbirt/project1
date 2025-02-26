@@ -73,7 +73,7 @@ const AppBar = () => {
           {/* Right Section (Button) */}
           <div className="button-container">
             <div className="button">
-              <div className="button-text">Start Now</div>a
+              <div className="button-text">Start Now</div>
               <svg
                 width="31"
                 height="24"
