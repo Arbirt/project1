@@ -6,17 +6,19 @@ import ServicesPage from "./pages/servivesPage";
 import { useNavigate } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import FAQ from "./pages/FAQ";
+import NotFound from "./components/404";
+import SignIn from "./components/SignIn";
 
 function App() {
   const routes = appRoutes();
-  const [path, setPath] = useState(window.location.pathname);
-  const navigate = useNavigate();
+  // const [path, setPath] = useState(window.location.pathname);
+  // const navigate = useNavigate();
 
-  useEffect(() => {
-    if (path == "/index.html") {
-      navigate("/Homepage");
-    }
-  }, [window.location.pathname]);
+  // useEffect(() => {
+  //   if (path == "/index.html") {
+  //     navigate("/Homepage");s
+  //   }
+  // }, [window.location.pathname]);
 
   return (
     <>
@@ -25,6 +27,8 @@ function App() {
         <Route path="/Homepage" element={<ServicesPage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/notFound" element={<NotFound />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
     </>
   );

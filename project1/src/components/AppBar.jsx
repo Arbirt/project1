@@ -73,13 +73,18 @@ const AppBar = () => {
                   Homepage
                 </div>
               </div>
+         
+          
+              <div className="nav-link" onClick={() => handleClick("notFound")}>
+                Services
+              </div>
               <div
                 style={{
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   flexDirection: "column",
-                  marginLeft: "50px",
+                  // marginLeft: "50px",
                   marginTop: "-18px",
                 }}
               >
@@ -98,37 +103,6 @@ const AppBar = () => {
                   AboutUs
                 </div>
               </div>
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  marginLeft: "50px",
-                  marginTop: "-18px",
-                }}
-              >
-                {path == "/faq" && (
-                  <div data-svg-wrapper>
-                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
-                      <rect width="8" height="8" rx="2" fill="#0F67FE" />
-                    </svg>
-                  </div>
-                )}
-                <div
-                  className={path == "/faq" ? "nav-link active" : "nav-link"}
-                  onClick={() => handleClick("faq")}
-                  style={{ marginTop: path == "/faq" ? "0px" : "14px" }}
-                >
-                  FAQ
-                </div>
-              </div>
-              {/* <div className="nav-link" onClick={() => handleClick("Homepage")}>
-                Services
-              </div>
-              <div className="nav-link" onClick={() => handleClick("about")}>
-                About Us
-              </div>
 
               <div className="nav-link-more">
                 Resources
@@ -143,12 +117,34 @@ const AppBar = () => {
                   </svg>
                 </div>
               </div>
-              <div className="nav-link" onClick={() => handleClick("FAQ")}>
-                FAQ
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  // marginLeft: "50px",
+                  marginTop: "-18px",
+                }}
+              >
+                {path == "/faq" && (
+                  <div data-svg-wrapper>
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none">
+                      <rect width="8" height="8" rx="2" fill="#0F67FE" />
+                    </svg>
+                  </div>
+                )}
+                <div
+                  className={path == "/faq" ? "nav-link active" : "nav-link"}
+                  onClick={() => handleClick("faq")}
+                  style={{ marginTop: path == "/faq" ? "0px" : "13px" }}
+                >
+                  FAQ
+                </div>
               </div>
-              <div className="nav-link" style={{ marginLeft: "-30px" }}>
+              <div className="nav-link" style={{ marginLeft: "-30px" }} onClick={() => handleClick("notFound")}>
                 Careers
-              </div> */}
+              </div>
             </div>
           </div>
 
